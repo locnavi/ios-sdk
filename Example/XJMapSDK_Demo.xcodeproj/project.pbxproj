@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0CA5C81E39FDE42A8A6215 /* libPods-XJMapSDK_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CB8F882914E4D4F8BCFE73 /* libPods-XJMapSDK_Demo.a */; };
+		3F3C514E21D20E800045A9CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C514D21D20E800045A9CC /* AppDelegate.m */; };
+		3F3C515621D20E810045A9CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C515521D20E810045A9CC /* Assets.xcassets */; };
+		3F3C515921D20E810045A9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C515721D20E810045A9CC /* LaunchScreen.storyboard */; };
+		3F3C515C21D20E810045A9CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C515B21D20E810045A9CC /* main.m */; };
+		3F3C516521D212AE0045A9CC /* ExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C516421D212AE0045A9CC /* ExampleListViewController.m */; };
+		3F3C516B21D214380045A9CC /* ExampleLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C516A21D214380045A9CC /* ExampleLocationViewController.m */; };
+		3F3C517C21D235D70045A9CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C517B21D235D70045A9CC /* Assets.xcassets */; };
+		3F3C517F21D235D70045A9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C517D21D235D70045A9CC /* LaunchScreen.storyboard */; };
+		3F3C518221D235D70045A9CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C518121D235D70045A9CC /* main.m */; };
+		3F3C518D21D236380045A9CC /* ExampleLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C518621D236370045A9CC /* ExampleLocationViewController.m */; };
+		3F3C518E21D236380045A9CC /* ExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C518821D236380045A9CC /* ExampleListViewController.m */; };
+		3F3C518F21D236380045A9CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C518C21D236380045A9CC /* AppDelegate.m */; };
+		3F3C519721D236C60045A9CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519621D236C60045A9CC /* Security.framework */; };
+		3F3C519921D236D30045A9CC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519821D236D30045A9CC /* libc++.tbd */; };
+		3F3C519B21D236DD0045A9CC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519A21D236DD0045A9CC /* CoreTelephony.framework */; };
+		3F3C519D21D236E80045A9CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519C21D236E80045A9CC /* libz.tbd */; };
+		3F3C519F21D236F10045A9CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519E21D236F10045A9CC /* SystemConfiguration.framework */; };
+		3F3C51A121D236F80045A9CC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C51A021D236F80045A9CC /* CFNetwork.framework */; };
+		3F3C51A321D237030045A9CC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C51A221D237030045A9CC /* libsqlite3.tbd */; };
+		3F3C51A421D237FD0045A9CC /* XJMapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519121D236B30045A9CC /* XJMapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F3C51A521D238100045A9CC /* XJMapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519121D236B30045A9CC /* XJMapSDK.framework */; };
+		3F3C51B621D262B50045A9CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C51B521D262B50045A9CC /* Assets.xcassets */; };
+		3F3C51B921D262B50045A9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C51B721D262B50045A9CC /* LaunchScreen.storyboard */; };
+		3F3C51BC21D262B50045A9CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C51BB21D262B50045A9CC /* main.m */; };
+		3F3C51C721D263170045A9CC /* ExampleLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C51C021D263160045A9CC /* ExampleLocationViewController.m */; };
+		3F3C51C821D263170045A9CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C51C121D263160045A9CC /* AppDelegate.m */; };
+		3F3C51C921D263170045A9CC /* ExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C51C321D263160045A9CC /* ExampleListViewController.m */; };
+		3F3C51CA21D35FBA0045A9CC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C51A221D237030045A9CC /* libsqlite3.tbd */; };
+		3F3C51CB21D35FBF0045A9CC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C51A021D236F80045A9CC /* CFNetwork.framework */; };
+		3F3C51CC21D35FC40045A9CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519E21D236F10045A9CC /* SystemConfiguration.framework */; };
+		3F3C51CD21D35FCA0045A9CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519C21D236E80045A9CC /* libz.tbd */; };
+		3F3C51CE21D35FD50045A9CC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519A21D236DD0045A9CC /* CoreTelephony.framework */; };
+		3F3C51CF21D35FDD0045A9CC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519821D236D30045A9CC /* libc++.tbd */; };
+		3F3C51D021D35FE10045A9CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C519621D236C60045A9CC /* Security.framework */; };
+		3F3C51D221D360090045A9CC /* XJMapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C51D121D360090045A9CC /* XJMapSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F3C519521D236BA0045A9CC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F3C51A421D237FD0045A9CC /* XJMapSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F3C514921D20E800045A9CC /* XJMapSDK_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XJMapSDK_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3C514C21D20E800045A9CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F3C514D21D20E800045A9CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F3C515521D20E810045A9CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F3C515821D20E810045A9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F3C515A21D20E810045A9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3C515B21D20E810045A9CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F3C516221D211670045A9CC /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		3F3C516321D212AE0045A9CC /* ExampleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleListViewController.h; sourceTree = "<group>"; };
+		3F3C516421D212AE0045A9CC /* ExampleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleListViewController.m; sourceTree = "<group>"; };
+		3F3C516921D214380045A9CC /* ExampleLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleLocationViewController.h; sourceTree = "<group>"; };
+		3F3C516A21D214380045A9CC /* ExampleLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleLocationViewController.m; sourceTree = "<group>"; };
+		3F3C517021D235D50045A9CC /* XJMapSDK_Local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XJMapSDK_Local.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3C517B21D235D70045A9CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F3C517E21D235D70045A9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F3C518021D235D70045A9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3C518121D235D70045A9CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F3C518621D236370045A9CC /* ExampleLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleLocationViewController.m; sourceTree = "<group>"; };
+		3F3C518721D236370045A9CC /* ExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleListViewController.h; sourceTree = "<group>"; };
+		3F3C518821D236380045A9CC /* ExampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleListViewController.m; sourceTree = "<group>"; };
+		3F3C518921D236380045A9CC /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		3F3C518A21D236380045A9CC /* ExampleLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleLocationViewController.h; sourceTree = "<group>"; };
+		3F3C518B21D236380045A9CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F3C518C21D236380045A9CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F3C519121D236B30045A9CC /* XJMapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XJMapSDK.framework; sourceTree = "<group>"; };
+		3F3C519621D236C60045A9CC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3F3C519821D236D30045A9CC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3F3C519A21D236DD0045A9CC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3F3C519C21D236E80045A9CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3F3C519E21D236F10045A9CC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3F3C51A021D236F80045A9CC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3F3C51A221D237030045A9CC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3F3C51AA21D262B40045A9CC /* XJMapSDK_Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XJMapSDK_Carthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3C51B521D262B50045A9CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F3C51B821D262B50045A9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F3C51BA21D262B50045A9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3C51BB21D262B50045A9CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F3C51C021D263160045A9CC /* ExampleLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleLocationViewController.m; sourceTree = "<group>"; };
+		3F3C51C121D263160045A9CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F3C51C221D263160045A9CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F3C51C321D263160045A9CC /* ExampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleListViewController.m; sourceTree = "<group>"; };
+		3F3C51C421D263160045A9CC /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		3F3C51C521D263170045A9CC /* ExampleLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleLocationViewController.h; sourceTree = "<group>"; };
+		3F3C51C621D263170045A9CC /* ExampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleListViewController.h; sourceTree = "<group>"; };
+		3F3C51D121D360090045A9CC /* XJMapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XJMapSDK.framework; path = Carthage/Build/iOS/XJMapSDK.framework; sourceTree = "<group>"; };
+		455C2BD97E3A3CDF06252D8E /* Pods-XJMapSDK_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJMapSDK_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		68333DBE16AA5F793F4DABF0 /* Pods-XJMapSDK_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XJMapSDK_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		72CB8F882914E4D4F8BCFE73 /* libPods-XJMapSDK_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XJMapSDK_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F3C514621D20E800045A9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0CA5C81E39FDE42A8A6215 /* libPods-XJMapSDK_Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3C516D21D235D50045A9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C51A321D237030045A9CC /* libsqlite3.tbd in Frameworks */,
+				3F3C51A121D236F80045A9CC /* CFNetwork.framework in Frameworks */,
+				3F3C519F21D236F10045A9CC /* SystemConfiguration.framework in Frameworks */,
+				3F3C519D21D236E80045A9CC /* libz.tbd in Frameworks */,
+				3F3C519B21D236DD0045A9CC /* CoreTelephony.framework in Frameworks */,
+				3F3C519921D236D30045A9CC /* libc++.tbd in Frameworks */,
+				3F3C519721D236C60045A9CC /* Security.framework in Frameworks */,
+				3F3C51A521D238100045A9CC /* XJMapSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3C51A721D262B40045A9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C51D221D360090045A9CC /* XJMapSDK.framework in Frameworks */,
+				3F3C51D021D35FE10045A9CC /* Security.framework in Frameworks */,
+				3F3C51CF21D35FDD0045A9CC /* libc++.tbd in Frameworks */,
+				3F3C51CE21D35FD50045A9CC /* CoreTelephony.framework in Frameworks */,
+				3F3C51CD21D35FCA0045A9CC /* libz.tbd in Frameworks */,
+				3F3C51CC21D35FC40045A9CC /* SystemConfiguration.framework in Frameworks */,
+				3F3C51CB21D35FBF0045A9CC /* CFNetwork.framework in Frameworks */,
+				3F3C51CA21D35FBA0045A9CC /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F3C514021D20E800045A9CC = {
+			isa = PBXGroup;
+			children = (
+				3F3C514B21D20E800045A9CC /* XJMapSDK_Demo */,
+				3F3C517121D235D50045A9CC /* XJMapSDK_Local */,
+				3F3C51AB21D262B40045A9CC /* XJMapSDK_Carthage */,
+				3F3C514A21D20E800045A9CC /* Products */,
+				935453FDFE122A86695FD053 /* Pods */,
+				8BC18EF3D61886AD0852E917 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F3C514A21D20E800045A9CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C514921D20E800045A9CC /* XJMapSDK_Demo.app */,
+				3F3C517021D235D50045A9CC /* XJMapSDK_Local.app */,
+				3F3C51AA21D262B40045A9CC /* XJMapSDK_Carthage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F3C514B21D20E800045A9CC /* XJMapSDK_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C516221D211670045A9CC /* APIKey.h */,
+				3F3C514C21D20E800045A9CC /* AppDelegate.h */,
+				3F3C514D21D20E800045A9CC /* AppDelegate.m */,
+				3F3C516321D212AE0045A9CC /* ExampleListViewController.h */,
+				3F3C516421D212AE0045A9CC /* ExampleListViewController.m */,
+				3F3C516921D214380045A9CC /* ExampleLocationViewController.h */,
+				3F3C516A21D214380045A9CC /* ExampleLocationViewController.m */,
+				3F3C515521D20E810045A9CC /* Assets.xcassets */,
+				3F3C515721D20E810045A9CC /* LaunchScreen.storyboard */,
+				3F3C515A21D20E810045A9CC /* Info.plist */,
+				3F3C515B21D20E810045A9CC /* main.m */,
+			);
+			path = XJMapSDK_Demo;
+			sourceTree = "<group>";
+		};
+		3F3C517121D235D50045A9CC /* XJMapSDK_Local */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C519021D236B30045A9CC /* XJMapSDK */,
+				3F3C518921D236380045A9CC /* APIKey.h */,
+				3F3C518B21D236380045A9CC /* AppDelegate.h */,
+				3F3C518C21D236380045A9CC /* AppDelegate.m */,
+				3F3C518721D236370045A9CC /* ExampleListViewController.h */,
+				3F3C518821D236380045A9CC /* ExampleListViewController.m */,
+				3F3C518A21D236380045A9CC /* ExampleLocationViewController.h */,
+				3F3C518621D236370045A9CC /* ExampleLocationViewController.m */,
+				3F3C517B21D235D70045A9CC /* Assets.xcassets */,
+				3F3C517D21D235D70045A9CC /* LaunchScreen.storyboard */,
+				3F3C518021D235D70045A9CC /* Info.plist */,
+				3F3C518121D235D70045A9CC /* main.m */,
+			);
+			path = XJMapSDK_Local;
+			sourceTree = "<group>";
+		};
+		3F3C519021D236B30045A9CC /* XJMapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C519121D236B30045A9CC /* XJMapSDK.framework */,
+			);
+			name = XJMapSDK;
+			path = ../../XJMapSDK;
+			sourceTree = "<group>";
+		};
+		3F3C51AB21D262B40045A9CC /* XJMapSDK_Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C51C421D263160045A9CC /* APIKey.h */,
+				3F3C51C221D263160045A9CC /* AppDelegate.h */,
+				3F3C51C121D263160045A9CC /* AppDelegate.m */,
+				3F3C51C621D263170045A9CC /* ExampleListViewController.h */,
+				3F3C51C321D263160045A9CC /* ExampleListViewController.m */,
+				3F3C51C521D263170045A9CC /* ExampleLocationViewController.h */,
+				3F3C51C021D263160045A9CC /* ExampleLocationViewController.m */,
+				3F3C51B521D262B50045A9CC /* Assets.xcassets */,
+				3F3C51B721D262B50045A9CC /* LaunchScreen.storyboard */,
+				3F3C51BA21D262B50045A9CC /* Info.plist */,
+				3F3C51BB21D262B50045A9CC /* main.m */,
+			);
+			path = XJMapSDK_Carthage;
+			sourceTree = "<group>";
+		};
+		8BC18EF3D61886AD0852E917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C51D121D360090045A9CC /* XJMapSDK.framework */,
+				3F3C51A221D237030045A9CC /* libsqlite3.tbd */,
+				3F3C51A021D236F80045A9CC /* CFNetwork.framework */,
+				3F3C519E21D236F10045A9CC /* SystemConfiguration.framework */,
+				3F3C519C21D236E80045A9CC /* libz.tbd */,
+				3F3C519A21D236DD0045A9CC /* CoreTelephony.framework */,
+				3F3C519821D236D30045A9CC /* libc++.tbd */,
+				3F3C519621D236C60045A9CC /* Security.framework */,
+				72CB8F882914E4D4F8BCFE73 /* libPods-XJMapSDK_Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		935453FDFE122A86695FD053 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68333DBE16AA5F793F4DABF0 /* Pods-XJMapSDK_Demo.debug.xcconfig */,
+				455C2BD97E3A3CDF06252D8E /* Pods-XJMapSDK_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F3C514821D20E800045A9CC /* XJMapSDK_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3C515F21D20E810045A9CC /* Build configuration list for PBXNativeTarget "XJMapSDK_Demo" */;
+			buildPhases = (
+				082186C45D91B5B436622828 /* [CP] Check Pods Manifest.lock */,
+				3F3C514521D20E800045A9CC /* Sources */,
+				3F3C514621D20E800045A9CC /* Frameworks */,
+				3F3C514721D20E800045A9CC /* Resources */,
+				249CAA0568602E1ECDACA307 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XJMapSDK_Demo;
+			productName = XJMapSDK_Demo;
+			productReference = 3F3C514921D20E800045A9CC /* XJMapSDK_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F3C516F21D235D50045A9CC /* XJMapSDK_Local */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3C518521D235D70045A9CC /* Build configuration list for PBXNativeTarget "XJMapSDK_Local" */;
+			buildPhases = (
+				3F3C516C21D235D50045A9CC /* Sources */,
+				3F3C516D21D235D50045A9CC /* Frameworks */,
+				3F3C516E21D235D50045A9CC /* Resources */,
+				3F3C519521D236BA0045A9CC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XJMapSDK_Local;
+			productName = XJMapSDK_Local;
+			productReference = 3F3C517021D235D50045A9CC /* XJMapSDK_Local.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F3C51A921D262B40045A9CC /* XJMapSDK_Carthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3C51BD21D262B50045A9CC /* Build configuration list for PBXNativeTarget "XJMapSDK_Carthage" */;
+			buildPhases = (
+				3F3C51A621D262B40045A9CC /* Sources */,
+				3F3C51A721D262B40045A9CC /* Frameworks */,
+				3F3C51A821D262B40045A9CC /* Resources */,
+				3F3C51D321D360190045A9CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XJMapSDK_Carthage;
+			productName = XJMapSDK_Carthage;
+			productReference = 3F3C51AA21D262B40045A9CC /* XJMapSDK_Carthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F3C514121D20E800045A9CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = xunji;
+				TargetAttributes = {
+					3F3C514821D20E800045A9CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3F3C516F21D235D50045A9CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3F3C51A921D262B40045A9CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 3F3C514421D20E800045A9CC /* Build configuration list for PBXProject "XJMapSDK_Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F3C514021D20E800045A9CC;
+			productRefGroup = 3F3C514A21D20E800045A9CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F3C514821D20E800045A9CC /* XJMapSDK_Demo */,
+				3F3C516F21D235D50045A9CC /* XJMapSDK_Local */,
+				3F3C51A921D262B40045A9CC /* XJMapSDK_Carthage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F3C514721D20E800045A9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C515921D20E810045A9CC /* LaunchScreen.storyboard in Resources */,
+				3F3C515621D20E810045A9CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3C516E21D235D50045A9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C517F21D235D70045A9CC /* LaunchScreen.storyboard in Resources */,
+				3F3C517C21D235D70045A9CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3C51A821D262B40045A9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C51B921D262B50045A9CC /* LaunchScreen.storyboard in Resources */,
+				3F3C51B621D262B50045A9CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		082186C45D91B5B436622828 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XJMapSDK_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		249CAA0568602E1ECDACA307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo-frameworks.sh",
+				"${PODS_ROOT}/../../XJMapSDK/XJMapSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XJMapSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F3C51D321D360190045A9CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)//Carthage/Build/iOS/XJMapSDK.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/XJMapSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F3C514521D20E800045A9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C516B21D214380045A9CC /* ExampleLocationViewController.m in Sources */,
+				3F3C516521D212AE0045A9CC /* ExampleListViewController.m in Sources */,
+				3F3C515C21D20E810045A9CC /* main.m in Sources */,
+				3F3C514E21D20E800045A9CC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3C516C21D235D50045A9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C518F21D236380045A9CC /* AppDelegate.m in Sources */,
+				3F3C518D21D236380045A9CC /* ExampleLocationViewController.m in Sources */,
+				3F3C518E21D236380045A9CC /* ExampleListViewController.m in Sources */,
+				3F3C518221D235D70045A9CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3C51A621D262B40045A9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3C51C721D263170045A9CC /* ExampleLocationViewController.m in Sources */,
+				3F3C51C921D263170045A9CC /* ExampleListViewController.m in Sources */,
+				3F3C51BC21D262B50045A9CC /* main.m in Sources */,
+				3F3C51C821D263170045A9CC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F3C515721D20E810045A9CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3C515821D20E810045A9CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F3C517D21D235D70045A9CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3C517E21D235D70045A9CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F3C51B721D262B50045A9CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3C51B821D262B50045A9CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F3C515D21D20E810045A9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F3C515E21D20E810045A9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F3C516021D20E810045A9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68333DBE16AA5F793F4DABF0 /* Pods-XJMapSDK_Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = XJMapSDK_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xunji.xjmapsdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F3C516121D20E810045A9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455C2BD97E3A3CDF06252D8E /* Pods-XJMapSDK_Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = XJMapSDK_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xunji.xjmapsdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F3C518321D235D70045A9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../XJMapSDK";
+				INFOPLIST_FILE = XJMapSDK_Local/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xunji.xjmapsdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F3C518421D235D70045A9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../XJMapSDK";
+				INFOPLIST_FILE = XJMapSDK_Local/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xunji.xjmapsdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F3C51BE21D262B50045A9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = XJMapSDK_Carthage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xunji.XJMapSDK-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F3C51BF21D262B50045A9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KRMQC7T9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = XJMapSDK_Carthage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xunji.XJMapSDK-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F3C514421D20E800045A9CC /* Build configuration list for PBXProject "XJMapSDK_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3C515D21D20E810045A9CC /* Debug */,
+				3F3C515E21D20E810045A9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F3C515F21D20E810045A9CC /* Build configuration list for PBXNativeTarget "XJMapSDK_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3C516021D20E810045A9CC /* Debug */,
+				3F3C516121D20E810045A9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F3C518521D235D70045A9CC /* Build configuration list for PBXNativeTarget "XJMapSDK_Local" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3C518321D235D70045A9CC /* Debug */,
+				3F3C518421D235D70045A9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F3C51BD21D262B50045A9CC /* Build configuration list for PBXNativeTarget "XJMapSDK_Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3C51BE21D262B50045A9CC /* Debug */,
+				3F3C51BF21D262B50045A9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F3C514121D20E800045A9CC /* Project object */;
+}
