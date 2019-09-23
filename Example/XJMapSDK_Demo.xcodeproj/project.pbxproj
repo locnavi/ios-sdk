@@ -416,7 +416,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo-frameworks.sh",
 				"${PODS_ROOT}/../../XJMapSDK/XJMapSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -425,7 +425,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XJMapSDK_Demo/Pods-XJMapSDK_Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3F3C51D321D360190045A9CC /* ShellScript */ = {
