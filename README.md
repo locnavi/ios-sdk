@@ -26,14 +26,18 @@ $ pod install
 ### 注意
 导入IpsmapSDK后需要
 - Build Settings中将Enable Bitcode 改成 NO。
-- 在Info.plist中添加授权申明
+- 在Info.plist中添加授权申明（iOS 13新增加蓝牙访问权限 “NSBluetoothAlwaysUsageDescription“）
 ```bash
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>App需要您的同意,才能访问蓝牙</string>
+	<string>开启蓝牙以使用室内导航服务</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>开启蓝牙以使用室内导航服务</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>App需要您的同意,才能在使用期间访问位置 </string>
+	<string>在室外定位及导航等服务中使用您的位置信息 </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>在室外定位及导航等服务中使用您的位置信息 </string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>App需要您的同意,才能访问麦克风</string>
+	<string>在语音识别中需要使用麦克风</string>
   ```
 - 若提示'XJMapSDK/XJMapSDK.h' file not found的话，需要在Build Setting->Framework Search Paths中配置framework的路径（如demo工程中的路径可设置‘$(PROJECT_DIR)/../XJMapSDK’）
   
