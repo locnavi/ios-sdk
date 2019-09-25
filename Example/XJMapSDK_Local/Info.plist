@@ -22,7 +22,11 @@
 	<true/>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>App需要您的同意,才能访问蓝牙</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>开启蓝牙以使用室内导航服务</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App需要您的同意,才能在使用期间访问位置 </string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>App需要您的同意,才能在使用期间访问位置 </string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>App需要您的同意,才能访问麦克风</string>
