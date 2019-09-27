@@ -24,7 +24,7 @@ $ pod install
 <img alt="XJMapSDK" src="Readme.asset/linked.jpg">
 
 ### 注意
-导入IpsmapSDK后需要
+导入XJmapSDK后需要
 - Build Settings中将Enable Bitcode 改成 NO。
 - 在Info.plist中添加授权申明（iOS 13新增加蓝牙访问权限 “NSBluetoothAlwaysUsageDescription“）
 ```bash
