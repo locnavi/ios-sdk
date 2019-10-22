@@ -68,7 +68,7 @@
 }
     
 - (void)searchExample {
-    XJMapViewController *vc = [[XJMapViewController alloc] initWithMapId:(NSString *)MapId searchName:@"C-7F-30"];
+    XJMapViewController *vc = [[XJMapViewController alloc] initWithMapId:(NSString *)MapId searchName:@"服务台"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
