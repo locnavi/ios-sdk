@@ -67,6 +67,11 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
     
+- (void)searchExample {
+    XJMapViewController *vc = [[XJMapViewController alloc] initWithMapId:(NSString *)MapId searchName:@"C-7F-30"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)locationExample {
     ExampleLocationViewController *vc = [[ExampleLocationViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
@@ -121,6 +126,7 @@
     if (_aryExample == nil) {
         _aryExample = @[[XJExample exampleWithTitle:@"显示地图" selector:@selector(mapExample)],
                         [XJExample exampleWithTitle:@"导航到具体位置" selector:@selector(navigationExample)],
+                        [XJExample exampleWithTitle:@"根据名称搜索" selector:@selector(searchExample)],
                         [XJExample exampleWithTitle:@"判断是否在地图内" selector:@selector(locationExample)],];
     }
     return _aryExample;

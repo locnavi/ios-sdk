@@ -18,6 +18,8 @@
 
 - (nonnull instancetype)initWithMapId:(nonnull NSString *)mapId targetName:(nonnull NSString *)targetName targetId:(nonnull NSString *)targetId;
 
+- (nonnull instancetype)initWithMapId:(nonnull NSString *)mapId searchName:(nonnull NSString *)searchName;
+
 @property (nonatomic, weak, nullable)id<XJLocationShareProtocol> locationShareDelegate;
 
 - (void)setShareMapId:(NSString *_Nullable)mapId groupId:(NSString *_Nullable)groupId;
