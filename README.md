@@ -64,6 +64,11 @@ $ pod install
     XJMapViewController *vc = [[XJMapViewController alloc] initWithMapId:@"3aBi8Pl1oy" targetName:@"服务台" targetId:@"10000"];
     [self.navigationController pushViewController:vc animated:YES];
 ```
+### 搜索名称
+```objective-c
+    XJMapViewController *vc = [[XJMapViewController alloc] initWithMapId:@"3aBi8Pl1oy" searchName:@"服务台"];
+    [self.navigationController pushViewController:vc animated:YES];
+```
 ### 是否在地图范围内的接口
 ```objective-c
 - (void)viewDidLoad {
