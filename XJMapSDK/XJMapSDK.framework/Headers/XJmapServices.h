@@ -58,6 +58,8 @@ typedef void (^ XJOpenURLResult)(BOOL isValid, NSDictionary *params);
 
 //放在线程中处理，防止主线程卡住
 - (BOOL)hasPermissionWith:(nonnull NSString *)mapId;
+//忽略手机语言设置，强制设置App语言，需初始化时调用。(@"zh-Hans"、@"en"、@"zh-Hant")
+- (void)setAppLanguage:(nullable NSString *)language;
 
 + (NSString *_Nullable)SDKVersion;
 

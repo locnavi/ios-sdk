@@ -21,6 +21,9 @@
 - (nonnull instancetype)initWithMapId:(nonnull NSString *)mapId searchName:(nonnull NSString *)searchName;
 
 @property (nonatomic, weak, nullable)id<XJLocationShareProtocol> locationShareDelegate;
+@property (nonatomic, assign)BOOL shareLocationEnable; //分享我的位置，默认false
+@property (nonatomic, assign)BOOL checkInEnable; //停车打卡功能，默认false
+
 
 - (void)setShareMapId:(NSString *_Nullable)mapId groupId:(NSString *_Nullable)groupId;
 - (void)setShareGroupNumber:(NSString *_Nullable)number params:(NSMutableDictionary *_Nullable)params;
