@@ -8,7 +8,7 @@ XJMapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序�
 ## 使用CocoaPods部署
 在Podfile中使用命令如下：
 ```bash
-pod 'XJMapSDK', '~> 1.0.9'
+pod 'XJMapSDK', '~> 1.0.10'
 ```
 然后运行以下命令
 
@@ -50,15 +50,23 @@ $ pod install
     [XJmapServices setAppKey:appKey];
     //正式上线的地图不需要设置该属性
     [XJmapServices sharedInstance].debug = YES;
+    // sdk默认读取手机语言设置，调用以下方法可忽略手机配置，强制使用参数设定语言，支持@"zh-Hans"、@"en"、@"zh-Hant"
+    //[[XJmapServices sharedInstance] setAppLanguage:@"zh-Hans"];
     [[XJmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    //可配置要分享的渠道，默认分享微信跟短信
+    //[XJShareConfig showSharePlatforms:@[@(XJShareTypeWeChat), @(XJShareTypeQQ), @(XJShareTypeSMS)]];
 ```
 
 
 ### 显示室内地图
+   增加了两个配置属性，默认禁用分享位置功能和停车打卡功能
 ```objective-c
     XJMapViewController *vc = [[XJMapViewController alloc] initWithMapId:@"3aBi8Pl1oy"];
+    //vc.shareLocationEnable = true; //开启分享位置功能
+    //vc.checkInEnable = true;	//开启停车打卡功能
     [self.navigationController pushViewController:vc animated:YES];
 ```
+  
 ### 导航至具体地址
 ```objective-c
     XJMapViewController *vc = [[XJMapViewController alloc] initWithMapId:@"3aBi8Pl1oy" targetName:@"服务台" targetId:@"10000"];
