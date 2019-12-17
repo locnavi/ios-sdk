@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XJMapSDK"
-  s.version      = "1.0.11"
+  s.version      = "1.0.12"
   s.summary      = "室内导航SDK."
 
   # This description is used to generate tags and improve search results.
