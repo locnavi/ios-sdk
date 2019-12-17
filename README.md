@@ -55,6 +55,8 @@ $ pod install
     [[XJmapServices sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     //可配置要分享的渠道，默认分享微信跟短信
     //[XJShareConfig showSharePlatforms:@[@(XJShareTypeWeChat), @(XJShareTypeQQ), @(XJShareTypeSMS)]];
+    //可配置是否显示蓝牙信号弱等提示，默认为true
+    //[[XJmapServices sharedInstance] showSignalStrengthTip:false];
 ```
 
 
