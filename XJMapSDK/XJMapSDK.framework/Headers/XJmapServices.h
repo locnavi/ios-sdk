@@ -60,6 +60,8 @@ typedef void (^ XJOpenURLResult)(BOOL isValid, NSDictionary *params);
 - (BOOL)hasPermissionWith:(nonnull NSString *)mapId;
 //忽略手机语言设置，强制设置App语言，需初始化时调用。(@"zh-Hans"、@"en"、@"zh-Hant")
 - (void)setAppLanguage:(nullable NSString *)language;
+//屏蔽蓝牙信号弱的提示，默认为true
+- (void)showSignalStrengthTip:(BOOL)show;
 
 + (NSString *_Nullable)SDKVersion;
 
