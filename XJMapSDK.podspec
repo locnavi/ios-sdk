@@ -135,6 +135,8 @@ Pod::Spec.new do |s|
   # s.dependency "Parse", "~> 1.14.4"
   # s.dependency "SDWebImage", "~> 3.8.2"
   # s.dependency "SVProgressHUD", "~> 2.1.2"
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
 end
