@@ -10,6 +10,13 @@
 #import "XJLocationShareProtocol.h"
 
 @class XJHospital;
+@class XJMapViewController;
+@class XJLocationInfo;
+@protocol XJMapViewControllerLocationDelegate <NSObject>
+
+- (void)xjMapViewController:(XJMapViewController *_Nullable)viewController didUpdateLocation:(XJLocationInfo *_Nullable)location;
+
+@end
 @interface XJMapViewController : UIViewController
 
 - (nonnull instancetype)initWithMapId:(nonnull NSString *)mapId;
@@ -24,6 +31,7 @@
 @property (nonatomic, assign)BOOL shareLocationEnable; //分享我的位置，默认false
 @property (nonatomic, assign)BOOL checkInEnable; //停车打卡功能，默认false
 
+@property (nonatomic, weak, nullable)id<XJMapViewControllerLocationDelegate> locationDelegate;
 
 - (void)setShareMapId:(NSString *_Nullable)mapId groupId:(NSString *_Nullable)groupId;
 - (void)setShareGroupNumber:(NSString *_Nullable)number params:(NSMutableDictionary *_Nullable)params;
