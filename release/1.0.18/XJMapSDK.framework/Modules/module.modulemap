@@ -1,0 +1,6 @@
+framework module XJMapSDK {
+  umbrella header "XJMapSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XJMapSDK"
-  s.version      = "1.0.13"
+  s.version      = "1.0.19"
   s.summary      = "室内导航SDK."
 
   # This description is used to generate tags and improve search results.
@@ -135,6 +135,8 @@ Pod::Spec.new do |s|
   # s.dependency "Parse", "~> 1.14.4"
   # s.dependency "SDWebImage", "~> 3.8.2"
   # s.dependency "SVProgressHUD", "~> 2.1.2"
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
 end
