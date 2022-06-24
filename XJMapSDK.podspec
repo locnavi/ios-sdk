@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XJMapSDK"
-  s.version      = "1.0.19"
+  s.version      = "1.1.0"
   s.summary      = "室内导航SDK."
 
   # This description is used to generate tags and improve search results.
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "UIKit", "Foundation", "QuartzCore", "SystemConfiguration", "CoreGraphics", "CoreLocation", "CoreTelephony", "AudioToolbox", "AVFoundation"
+  s.frameworks = "UIKit", "Foundation", "QuartzCore", "SystemConfiguration", "CoreGraphics", "CoreLocation", "CoreTelephony", "AVFoundation", "Speech"
 
   # s.library   = "iconv"
   s.libraries = "z", "z.1.2.5", "xml2"
