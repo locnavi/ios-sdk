@@ -1,6 +1,6 @@
 # XJMapSDK-iOS
 
-XJMapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序开发接口，供开发者在自己的iOS应用中加入室内地图相关的功能，包括：地图显示（多楼层、多栋楼）、室内导航、模拟导航、语音播报等功能。
+XJMapSDK-iOS 是一套基于 iOS 10.0 及以上版本的室内地图应用程序开发接口，供开发者在自己的iOS应用中加入室内地图相关的功能，包括：地图显示（多楼层、多栋楼）、室内导航、模拟导航、语音播报等功能。
 
 ## 获取AppKey
 请联系richard.chin@xunji-iot.com获取appKey、mapId
@@ -8,7 +8,7 @@ XJMapSDK-iOS 是一套基于 iOS 8.0 及以上版本的室内地图应用程序�
 ## 使用CocoaPods部署
 在Podfile中使用命令如下：
 ```bash
-pod 'XJMapSDK', '~> 1.0.19'
+pod 'XJMapSDK', '~> 1.1.0'
 ```
 然后运行以下命令
 
@@ -25,7 +25,7 @@ $ pod install
 
 ### 注意
 导入XJmapSDK后需要
-- Build Settings中将Enable Bitcode 改成 NO。
+- Build Settings中将Enable Bitcode 支持使用 YES
 - 在Info.plist中添加授权申明（iOS 13新增加蓝牙访问权限 “NSBluetoothAlwaysUsageDescription“）
 ```bash
 	<key>NSBluetoothPeripheralUsageDescription</key>
@@ -38,6 +38,9 @@ $ pod install
 	<string>在室外定位及导航等服务中使用您的位置信息 </string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>在语音识别中需要使用麦克风</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>请求在App使用期间使用语音识别功能</string>
+
   ```
 - 若提示'XJMapSDK/XJMapSDK.h' file not found的话，需要在Build Setting->Framework Search Paths中配置framework的路径（如demo工程中的路径可设置‘$(PROJECT_DIR)/../XJMapSDK’）
   
