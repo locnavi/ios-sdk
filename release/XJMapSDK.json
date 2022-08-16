@@ -14,5 +14,6 @@
 	"1.0.17": "https://raw.githubusercontent.com/locnavi/ios-sdk/master/release/1.0.17/XJMapSDK.framework.zip",
 	"1.0.18": "https://raw.githubusercontent.com/locnavi/ios-sdk/master/release/1.0.18/XJMapSDK.framework.zip",
 	"1.0.19": "https://raw.githubusercontent.com/locnavi/ios-sdk/master/release/1.0.19/XJMapSDK.framework.zip",
-	"1.1.0": "https://raw.githubusercontent.com/locnavi/ios-sdk/master/release/1.1.0/XJMapSDK.framework.zip"
+	"1.1.0": "https://raw.githubusercontent.com/locnavi/ios-sdk/master/release/1.1.0/XJMapSDK.framework.zip",
+	"1.1.1": "https://raw.githubusercontent.com/locnavi/ios-sdk/master/release/1.1.1/XJMapSDK.framework.zip"
 }
